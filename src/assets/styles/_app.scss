@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Yaldevi:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+html {
+  overflow-y: scroll;
+  height: fit-content;
+  background-color: var(--color4);
+  color: var(--color3);
+}
+
+h1 {
+  color: var(--color3);
+}
+
+html,
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  transition: 0.3s;
+}
+
+//SCROLLBAR
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+  @media #{$mobile} {
+    display: none;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color5);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+#app {
+  font-family: Inter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $blue1;
+  user-select: none;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.primary-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px 0px #0000004d;
+  background: $red1;
+  font-size: 13px;
+
+  path {
+    fill: var(--color1);
+  }
+}

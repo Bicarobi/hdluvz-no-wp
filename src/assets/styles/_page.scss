@@ -1,0 +1,210 @@
+.page {
+    color: var(--color3);
+    text-align: left;
+    position: relative;
+    min-height: 100vh;
+
+    h1 {
+        text-align: left;
+    }
+
+    /* &::after {
+        content: "";
+        display: block;
+        height: 498px;
+    } */
+
+    a {
+        color: var(--color3);
+    }
+}
+
+.organization-container {
+    padding: 220px 15% 50px 15%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    min-height: 100vh;
+    width: max-content;
+
+    @media #{$mobile} {
+        padding: 75px 10px 0 10px;
+    }
+
+    h1 {
+        margin-bottom: 100px;
+        font-size: 32px;
+        text-align: center;
+
+        @media #{$mobile} {
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+    }
+
+    .organization-members {
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        align-items: flex-start;
+        gap: 64px;
+
+        //padding-left: 64px;
+
+        @media #{$mobile} {
+            grid-template-columns: max-content;
+            grid-template-rows: auto auto auto auto auto auto;
+            gap: 30px;
+        }
+
+        h4 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 20px;
+
+            @media #{$mobile} {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+
+        div {
+            font-size: 20px;
+
+            @media #{$mobile} {
+                font-size: 16px;
+            }
+        }
+
+        .member-container {
+            //padding-bottom: 24px;
+        }
+    }
+}
+
+.members-container {
+    padding: 220px 15% 50px 15%;
+    margin: 0 auto;
+    width: max-content;
+    height: max-content;
+    min-height: 100vh;
+
+    @media #{$mobile} {
+        padding: 75px 10px 0 10px;
+    }
+
+    h1 {
+        margin-bottom: 100px;
+        font-size: 32px;
+        text-align: center;
+
+        @media #{$mobile} {
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+    }
+}
+
+.members-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+
+    padding-left: 64px;
+    gap: 100px;
+
+    @media #{$mobile} {
+        padding-left: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-size: 20px;
+
+        @media #{$mobile} {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+
+    div {
+        font-size: 20px;
+
+        @media #{$mobile} {
+            font-size: 16px;
+        }
+    }
+}
+
+.archive-container {
+    padding: 220px 15% 100px 15%;
+    height: max-content;
+    min-height: 100vh;
+
+    @media #{$mobile} {
+        padding: 75px 10px 0 10px;
+    }
+
+    .content {
+        font-size: 20px;
+        white-space: break-spaces;
+
+        @media #{$mobile} {
+            font-size: 16px;
+        }
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    h1 {
+        margin-bottom: 64px;
+
+        @media #{$mobile} {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+    }
+
+    > div {
+        > h4 {
+            font-size: 20px;
+            margin-top: 64px;
+            text-align: center;
+        }
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+
+        button {
+            cursor: pointer;
+            font-family: Yaldevi;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            background: #d30516;
+            color: #fff;
+            outline: none;
+            border: none;
+            /* border-radius: 4px; */
+            padding: 8px 16px;
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+}

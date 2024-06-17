@@ -1,0 +1,42 @@
+$white1: #fff;
+$white2: #fafafa;
+$white3: #d1d1d1;
+
+$gray1: #292929;
+$gray2: #202020;
+
+$blue1: #2c3e50;
+
+$red1: #d30516;
+
+$mobile: "(max-width: 930px)";
+$mobile2: "(max-width: 390px)";
+$mobile3: "(max-width: 265px)";
+$tablet: "(max-width: 1200px)";
+
+[data-theme="light"] {
+    --color1: #{$white1};
+    --color2: #{$gray1};
+    --color3: #{$blue1};
+    --color4: #{$white2};
+    --color5: #{$white3};
+}
+
+[data-theme="dark"] {
+    --color1: #{$gray1};
+    --color2: #{$white1};
+    --color3: #{$white1};
+    --color4: #{$gray2};
+    --color5: #{$gray2};
+}
+
+@import "app";
+@import "nav";
+@import "home";
+@import "event";
+@import "events";
+@import "about";
+@import "footer";
+@import "page";
+@import "gallery";
+@import "_image-modal";
